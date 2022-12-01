@@ -1,10 +1,10 @@
 * {
-    font-family:  'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
-    margin: 0px;
-    background-color: hsla(210,65%,43%,0.05);
+    margin: -2px;
+    background-color: hsla(210, 65%, 43%, 0.05);
 }
 
 .container {
@@ -16,16 +16,9 @@ body {
 }
 
 
-/*----HEADER AND NAV----*/
+/*----NAV----*/
 #header {
-    justify-content: space-between;
-
-}
-
-h1 {
-    font-size: 38px;
-    padding: 0 20px;
-    font-weight: 300;
+    justify-content: flex-end;
 
 }
 
@@ -36,19 +29,41 @@ nav ul {
 nav li {
     display: inline-block;
     justify-content: space-around;
-    padding: 20px;
+    padding: 15px 0px;
+    margin: 0px 20px;
     font-weight: 300;
-
+    color: #666666;
+    border-bottom: 3px solid transparent;
 }
 
+nav li:hover {
+    border-color: #33CCFF;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li a:visited { 
+    color: #666666;
+}
+
+nav li a:hover { 
+    font-weight: 500;
+}
+
+nav li a:active {
+    color: black;
+}
 
 /*----COVER PHOTO----*/
 #cover {
     background-image: url(./resources/sandiamtns.jpeg);
     background-size: cover;
     height: 280px;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     border: 2px solid white;
 }
 
@@ -56,24 +71,115 @@ nav li {
     max-width: 200px;
     border-radius: 50%;
     border: 2px solid white;
-    margin: 20px;
+    position: absolute;
+    right: 80px;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    font-size: 38px;
+    padding: 5px 15px;
+    margin: 0px;
+    font-weight: 300;
+    color: hsl(0, 0%, 30%);
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 0px;
+    font-weight: 100;
+    color: hsl(0, 0%, 30%);
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: left;
 }
 
 
 /*----PROJECTS SECTION----*/
 .project {
-    flex: 0 1 22%;
+    flex: 0 1 20%;
+    min-height: 200px;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    border: 2px solid hsl(210,65%,43%);
-    margin: 15px 10px;
+    border: 3px solid transparent;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whitespace {
+    padding: 10px 5%;
+}
+
+.project:hover {
+    border-color: #33CCFF;
 }
 
 h2 {
+    display: block;
+    width: 100%;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(0, 0%, 30%);
+    background-color: rgba(255, 255, 255, 0.6);
+
 }
 
+#consult {
+    background-image: url(resources/consulting.jpeg);
+}
+
+#kgsa {
+    background-image: url(resources/kgsa.jpeg);
+}
+
+#dev {
+    background-image: url(resources/dev.jpeg);
+}
+
+#climate {
+    background-image: url(resources/climate.jpeg);
+}
+
+#dogs {
+    background-image: url(resources/dogs.jpeg);
+}
+
+#diy {
+    background-image: url(resources/diy.jpeg);
+}
+
+#learn {
+    background-image: url(resources/books.jpeg);
+}
+
+#garden {
+    background-image: url(resources/garden.jpeg);
+}
 
 /*----FOOTER----*/
+footer {
+
+}
+
+#banner {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: hsla(210, 65%, 43%, 0.5);
+    position: fixed;
+    top: 100px;
+    z-index: 2;
+    display: block;
+    width: 100%;
+}
