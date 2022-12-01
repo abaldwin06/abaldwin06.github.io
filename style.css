@@ -1,0 +1,79 @@
+* {
+    font-family:  'Raleway', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: hsla(210,65%,43%,0.05);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+/*----HEADER AND NAV----*/
+#header {
+    justify-content: space-between;
+
+}
+
+h1 {
+    font-size: 38px;
+    padding: 0 20px;
+    font-weight: 300;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 20px;
+    font-weight: 300;
+
+}
+
+
+/*----COVER PHOTO----*/
+#cover {
+    background-image: url(./resources/sandiamtns.jpeg);
+    background-size: cover;
+    height: 280px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.circle {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+
+/*----PROJECTS SECTION----*/
+.project {
+    flex: 0 1 22%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid hsl(210,65%,43%);
+    margin: 15px 10px;
+}
+
+h2 {
+    padding: 10px;
+    font-weight: 300;
+}
+
+
+/*----FOOTER----*/
